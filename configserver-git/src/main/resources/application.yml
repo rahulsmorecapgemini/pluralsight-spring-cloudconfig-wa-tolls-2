@@ -13,7 +13,7 @@ spring:
                         perf:
                           pattern: '*perf'
                           uri: https://github.com/rahulsmorecapgemini/pluralsight-spring-cloudconfig-wa-tolls-perf-2
-                    default-label: master
+#                    default-label: master
 # clone-on-start: true
 
 #  profiles:
