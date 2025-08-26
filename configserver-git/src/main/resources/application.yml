@@ -7,7 +7,13 @@ spring:
               server:
                     git:
                       uri: https://github.com/rahulsmorecapgemini/pluralsight-spring-cloudconfig-wa-tolls-2
-                      default-label: master
+                      search-paths:
+                      - station*
+                      repos:
+                        perf:
+                          pattern: '*perf'
+                          uri: https://github.com/rahulsmorecapgemini/pluralsight-spring-cloudconfig-wa-tolls-perf-2
+                    default-label: master
 # clone-on-start: true
 
 #  profiles:
