@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate View</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Rate Information</h2>
+    <div class="info">
+        <span class="label">Rate Amount:</span>
+        <span th:text="${rateamount}">[Rate]</span>
+    </div>
+    <div class="info">
+        <span class="label">Number of Lanes:</span>
+        <span th:text="${lanes}">[Lanes]</span>
+    </div>
+    <div class="info">
+        <span class="label">Toll Start Time:</span>
+        <span th:text="${tollstart}">[Toll Start]</span>
+    </div>
+</div>
+</body>
+</html>
